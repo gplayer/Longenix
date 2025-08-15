@@ -1,5 +1,72 @@
-/* Base styles from Module 7A */
-/* Add tab navigation styles, compact field styles, and responsive adjustments */
+:root {
+  --bg: #0e0f12;
+  --panel: #171a21;
+  --ink: #e9eef5;
+  --muted: #aab6c9;
+  --accent: #4fb477;
+  --accent-2: #3a8fd4;
+  --danger: #e2545e;
+  --warn: #f0b429;
+  --border: #2a2f3a;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg); color: var(--ink);
+}
+.container { width: min(100%, 980px); margin: 0 auto; padding: 1rem; }
+
+.site-header { background: linear-gradient(180deg, #101219, #0e0f12); border-bottom: 1px solid var(--border); }
+.header-inner h1 { margin: 0; font-size: 1.5rem; }
+.subtitle { color: var(--muted); margin: .25rem 0 0; }
+
+.site-footer { border-top: 1px solid var(--border); color: var(--muted); text-align: center; padding: 1rem 0; }
+
+.progress { background: #0f1116; border: 1px solid var(--border); border-radius: 999px; height: 10px; overflow: hidden; margin: 1rem 0 .25rem; }
+.progress-bar { background: linear-gradient(90deg, var(--accent), var(--accent-2)); height: 100%; width: 0%; transition: width .25s ease; }
+.step-labels { display: flex; gap: .5rem; justify-content: space-between; font-size: .9rem; color: var(--muted); }
+.step-label.active { color: var(--ink); font-weight: 600; }
+
+#intake-form { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+
+.field { display: grid; grid-template-columns: 220px 1fr; gap: .75rem; align-items: center; padding: .5rem 0; border-bottom: 1px dashed var(--border); }
+.field:last-child { border-bottom: 0; }
+.label { color: var(--muted); font-size: .95rem; }
+.control input, .control select, .control textarea { width: 100%; background: #0f1218; border: 1px solid var(--border); color: var(--ink); border-radius: 8px; padding: .6rem .75rem; }
+.control input[type=number] { -moz-appearance: textfield; }
+.control input::-webkit-outer-spin-button, .control input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+.hint { color: var(--muted); font-size: .8rem; margin-top: .25rem; }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+
+.nav-row { display: flex; gap: .5rem; align-items: center; margin-top: 1rem; }
+.spacer { flex: 1; }
+.btn { border: 1px solid var(--border); border-radius: 10px; padding: .6rem .9rem; font-weight: 600; cursor: pointer; }
+.btn-primary { background: var(--accent-2); border-color: transparent; color: white; }
+.btn-secondary { background: transparent; color: var(--ink); }
+.btn-light { background: #10141b; color: var(--muted); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+
+#form-messages { margin: .25rem 0 .75rem; min-height: 1.25rem; }
+.alert { padding: .5rem .75rem; border-radius: 8px; font-size: .95rem; }
+.alert-warn { background: rgba(240,180,41,.12); border: 1px solid rgba(240,180,41,.35); color: #f2d48e; }
+.alert-danger { background: rgba(226,84,94,.12); border: 1px solid rgba(226,84,94,.35); color: #f0a1a7; }
+.alert-success { background: rgba(79,180,119,.12); border: 1px solid rgba(79,180,119,.35); color: #b3e1c8; }
+
+fieldset { border: 1px solid var(--border); border-radius: 10px; padding: .75rem; margin: .5rem 0 1rem; }
+legend { color: var(--muted); font-size: .95rem; padding: 0 .4rem; }
+
+.small-text { font-size: .8rem; color: var(--muted); }
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .field { grid-template-columns: 1fr; }
+}
+
+/* ===== Module 7B additions ===== */
 .tabs { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
 .tab { padding: 0.5rem 1rem; cursor: pointer; color: var(--muted); }
 .tab.active { color: var(--ink); border-bottom: 3px solid var(--accent); font-weight: 600; }

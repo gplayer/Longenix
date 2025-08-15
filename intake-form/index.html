@@ -10,36 +10,34 @@
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <h1>Client Health Assessment – Intake</h1>
-      <p class="subtitle">Module 7A: Steps 1–3 (Demographics • Lifestyle • Biometrics)</p>
+      <p class="subtitle">Module 7B: Steps 4–5 (Lab Panel • Family History)</p>
     </div>
   </header>
 
   <main class="container" role="main">
     <section aria-label="Progress">
-      <div id="progress" class="progress" aria-hidden="false">
-        <div id="progress-bar" class="progress-bar" style="width:0%"></div>
+      <div id="progress" class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
       </div>
-      <div class="step-labels" aria-hidden="true">
-        <span class="step-label active">1. Demographics</span>
+      <div class="step-labels">
+        <span class="step-label">1. Demographics</span>
         <span class="step-label">2. Lifestyle</span>
         <span class="step-label">3. Biometrics</span>
+        <span class="step-label">4. Lab Panel</span>
+        <span class="step-label">5. Family History</span>
       </div>
     </section>
 
     <form id="intake-form" novalidate>
       <div id="form-messages" role="alert" aria-live="polite"></div>
-
-      <!-- Dynamic step content will render here -->
       <div id="step-root"></div>
-
       <div class="nav-row">
-        <button type="button" id="btn-back" class="btn btn-secondary" aria-label="Go to previous step">Back</button>
+        <button type="button" id="btn-back" class="btn btn-secondary">Back</button>
         <div class="spacer"></div>
-        <button type="button" id="btn-save" class="btn btn-light" aria-label="Save progress">Save</button>
-        <button type="button" id="btn-next" class="btn btn-primary" aria-label="Go to next step">Next</button>
+        <button type="button" id="btn-save" class="btn btn-light">Save</button>
+        <button type="button" id="btn-next" class="btn btn-primary">Next</button>
       </div>
-
-      <p class="legal small-text">Your data is stored locally in your browser (LocalStorage) in this demo build. No information is transmitted to any server.</p>
+      <p class="legal small-text">Your data is stored locally in your browser (LocalStorage). No information is transmitted to any server.</p>
     </form>
   </main>
 

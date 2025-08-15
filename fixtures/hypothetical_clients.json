@@ -1,0 +1,220 @@
+[
+  {
+    "id": "HX-001",
+    "label": "Metabolic syndrome (male, USA)",
+    "country": "USA",
+    "provider": "Dr. Graham Player",
+    "demographics": { "age": 55, "sex": "Male", "education_years": 12 },
+    "biometrics": { "height_cm": 178, "weight_kg": 96, "waist_cm": 108, "sbp": 138, "dbp": 88, "bp_treated": true },
+    "labs": {
+      "tc": 220, "tc_unit": "mg/dL",
+      "hdl": 38, "hdl_unit": "mg/dL",
+      "ldl": 140, "ldl_unit": "mg/dL",
+      "triglycerides": 210, "triglycerides_unit": "mg/dL",
+      "glucose": 112, "glucose_unit": "mg/dL",
+      "hba1c_pct": 6.1,
+      "albumin_gL": 42,
+      "crp_mgdl": 0.5,
+      "wbc_10e3_uL": 7.8,
+      "rdw_pct": 14.5,
+      "mcv_fl": 92,
+      "lymph_pct": 25,
+      "alp_uL": 88,
+      "creatinine_umolL": 95,
+      "acr_mg_g": 20
+    },
+    "lifestyle": { "smoker": "Yes", "pack_years": 25, "pa_days": 1, "veg_daily": "No", "alcohol_units": 6 },
+    "family_history": {
+      "cvd": { "first": 1, "second": 1, "third": 0 },
+      "t2d": { "first": 1, "second": 0, "third": 0 },
+      "cancer": { "first": 0, "second": 1, "third": 0 },
+      "copd": { "first": 0, "second": 0, "third": 0 },
+      "neuro": { "first": 0, "second": 0, "third": 0 },
+      "ckd": { "first": 0, "second": 1, "third": 0 }
+    },
+    "atms": [
+      { "type": "T", "date": "2017-07", "title": "High-stress job change" },
+      { "type": "M", "date": "2020-11", "title": "Started antihypertensives" },
+      { "type": "T", "date": "2022-02", "title": "COVID infection" }
+    ],
+    "systems": {
+      "Inflammation": 7,
+      "Detoxification": 6,
+      "Energy/Mitochondria": 7,
+      "Gastrointestinal": 5,
+      "Cardiometabolic": 8,
+      "Neuroendocrine": 6,
+      "Immune": 6
+    },
+    "hallmarks_aging": {
+      "Genomic Instability": 6,
+      "Telomere Attrition": 6,
+      "Epigenetic Alterations": 6,
+      "Loss of Proteostasis": 6,
+      "Deregulated Nutrient-Sensing": 7,
+      "Mitochondrial Dysfunction": 7,
+      "Cellular Senescence": 7,
+      "Stem Cell Exhaustion": 6,
+      "Altered Intercellular Communication": 6,
+      "Metabolic Dysfunction": 7,
+      "Chronic Inflammation": 7,
+      "Cellular Senescence Resistance": 6
+    },
+    "hallmarks_health": {
+      "Integrity of Barriers": 5,
+      "Containment of Perturbations": 4,
+      "Recycling and Turnover": 5,
+      "Integration of Circuitries": 5,
+      "Rhythmic Oscillations": 4,
+      "Homeostatic Resilience": 5,
+      "Hormetic Regulation": 5,
+      "Repair and Regeneration": 5
+    },
+    "mbs": { "Mind": 5, "Body": 5, "Spirit": 4, "notes": "Feeling burnt out over last 2 years." }
+  },
+  {
+    "id": "HX-002",
+    "label": "Low-risk wellness (female, Australia)",
+    "country": "Australia",
+    "provider": "Dr. Graham Player",
+    "demographics": { "age": 30, "sex": "Female", "education_years": 16 },
+    "biometrics": { "height_cm": 168, "weight_kg": 59, "waist_cm": 72, "sbp": 108, "dbp": 70, "bp_treated": false },
+    "labs": {
+      "tc": 4.2, "tc_unit": "mmol/L",
+      "hdl": 1.6, "hdl_unit": "mmol/L",
+      "ldl": 2.2, "ldl_unit": "mmol/L",
+      "triglycerides": 0.9, "triglycerides_unit": "mmol/L",
+      "glucose": 4.6, "glucose_unit": "mmol/L",
+      "hba1c_pct": 5.1,
+      "albumin_gL": 45,
+      "crp_mgdl": 0.1,
+      "wbc_10e3_uL": 5.6,
+      "rdw_pct": 12.6,
+      "mcv_fl": 90,
+      "lymph_pct": 33,
+      "alp_uL": 60,
+      "creatinine_umolL": 60,
+      "acr_mg_g": 3
+    },
+    "lifestyle": { "smoker": "No", "pack_years": 0, "pa_days": 5, "veg_daily": "Yes", "alcohol_units": 3 },
+    "family_history": {
+      "cvd": { "first": 0, "second": 1, "third": 0 },
+      "t2d": { "first": 0, "second": 0, "third": 1 },
+      "cancer": { "first": 0, "second": 0, "third": 0 },
+      "copd": { "first": 0, "second": 0, "third": 0 },
+      "neuro": { "first": 0, "second": 0, "third": 0 },
+      "ckd": { "first": 0, "second": 0, "third": 0 }
+    },
+    "atms": [
+      { "type": "A", "date": "2012-03", "title": "Gluten sensitivity identified" },
+      { "type": "M", "date": "2021-01", "title": "Started Mediterranean diet" }
+    ],
+    "systems": {
+      "Inflammation": 2,
+      "Detoxification": 3,
+      "Energy/Mitochondria": 3,
+      "Gastrointestinal": 3,
+      "Cardiometabolic": 2,
+      "Neuroendocrine": 3,
+      "Immune": 2
+    },
+    "hallmarks_aging": {
+      "Genomic Instability": 3,
+      "Telomere Attrition": 3,
+      "Epigenetic Alterations": 3,
+      "Loss of Proteostasis": 3,
+      "Deregulated Nutrient-Sensing": 3,
+      "Mitochondrial Dysfunction": 3,
+      "Cellular Senescence": 3,
+      "Stem Cell Exhaustion": 2,
+      "Altered Intercellular Communication": 3,
+      "Metabolic Dysfunction": 2,
+      "Chronic Inflammation": 2,
+      "Cellular Senescence Resistance": 3
+    },
+    "hallmarks_health": {
+      "Integrity of Barriers": 7,
+      "Containment of Perturbations": 7,
+      "Recycling and Turnover": 6,
+      "Integration of Circuitries": 6,
+      "Rhythmic Oscillations": 6,
+      "Homeostatic Resilience": 7,
+      "Hormetic Regulation": 6,
+      "Repair and Regeneration": 6
+    },
+    "mbs": { "Mind": 7, "Body": 8, "Spirit": 7, "notes": "Regular yoga and sleep routine." }
+  },
+  {
+    "id": "HX-003",
+    "label": "COPD/CKD risk (male, Philippines)",
+    "country": "Philippines",
+    "provider": "Dr. Graham Player",
+    "demographics": { "age": 68, "sex": "Male", "education_years": 10 },
+    "biometrics": { "height_cm": 170, "weight_kg": 78, "waist_cm": 100, "sbp": 152, "dbp": 92, "bp_treated": true },
+    "labs": {
+      "tc": 6.0, "tc_unit": "mmol/L",
+      "hdl": 0.9, "hdl_unit": "mmol/L",
+      "ldl": 3.8, "ldl_unit": "mmol/L",
+      "triglycerides": 3.2, "triglycerides_unit": "mmol/L",
+      "glucose": 7.0, "glucose_unit": "mmol/L",
+      "hba1c_pct": 7.2,
+      "albumin_gL": 35,
+      "crp_mgdl": 1.2,
+      "wbc_10e3_uL": 9.5,
+      "rdw_pct": 15.2,
+      "mcv_fl": 88,
+      "lymph_pct": 18,
+      "alp_uL": 130,
+      "creatinine_umolL": 160,
+      "acr_mg_g": 250
+    },
+    "lifestyle": { "smoker": "Yes", "pack_years": 40, "pa_days": 0, "veg_daily": "No", "alcohol_units": 10 },
+    "family_history": {
+      "cvd": { "first": 1, "second": 0, "third": 0 },
+      "t2d": { "first": 1, "second": 1, "third": 0 },
+      "cancer": { "first": 0, "second": 1, "third": 1 },
+      "copd": { "first": 1, "second": 0, "third": 0 },
+      "neuro": { "first": 0, "second": 0, "third": 0 },
+      "ckd": { "first": 1, "second": 0, "third": 0 }
+    },
+    "atms": [
+      { "type": "A", "date": "2005-04", "title": "Occupational dust exposure" },
+      { "type": "T", "date": "2018-09", "title": "Pneumonia hospitalization" },
+      { "type": "M", "date": "2023-06", "title": "ACE inhibitor started" }
+    ],
+    "systems": {
+      "Inflammation": 8,
+      "Detoxification": 6,
+      "Energy/Mitochondria": 7,
+      "Gastrointestinal": 5,
+      "Cardiometabolic": 8,
+      "Neuroendocrine": 6,
+      "Immune": 7
+    },
+    "hallmarks_aging": {
+      "Genomic Instability": 7,
+      "Telomere Attrition": 7,
+      "Epigenetic Alterations": 6,
+      "Loss of Proteostasis": 6,
+      "Deregulated Nutrient-Sensing": 6,
+      "Mitochondrial Dysfunction": 7,
+      "Cellular Senescence": 7,
+      "Stem Cell Exhaustion": 6,
+      "Altered Intercellular Communication": 6,
+      "Metabolic Dysfunction": 7,
+      "Chronic Inflammation": 8,
+      "Cellular Senescence Resistance": 6
+    },
+    "hallmarks_health": {
+      "Integrity of Barriers": 4,
+      "Containment of Perturbations": 4,
+      "Recycling and Turnover": 4,
+      "Integration of Circuitries": 4,
+      "Rhythmic Oscillations": 3,
+      "Homeostatic Resilience": 4,
+      "Hormetic Regulation": 3,
+      "Repair and Regeneration": 4
+    },
+    "mbs": { "Mind": 5, "Body": 4, "Spirit": 5, "notes": "Breathlessness on exertion; low activity." }
+  }
+]

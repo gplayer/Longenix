@@ -1,0 +1,10 @@
+{
+  "branding": {
+    "org": "Longenix Health",
+    "tagline": "Predict • Prevent • Persist",
+    "modelName": "Chronic Disease Risk Assessment System",
+    "defaultProvider": "Dr. Graham Player",
+    "copyright":
+      "© Graham Player Ph.D. — For qualified health practitioners only; not for general distribution."
+  }
+}

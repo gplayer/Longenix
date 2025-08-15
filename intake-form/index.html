@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Client Health Assessment – Intake Form</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1>Client Health Assessment – Intake</h1>
+      <p class="subtitle">Module 7A: Steps 1–3 (Demographics • Lifestyle • Biometrics)</p>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section aria-label="Progress">
+      <div id="progress" class="progress" aria-hidden="false">
+        <div id="progress-bar" class="progress-bar" style="width:0%"></div>
+      </div>
+      <div class="step-labels" aria-hidden="true">
+        <span class="step-label active">1. Demographics</span>
+        <span class="step-label">2. Lifestyle</span>
+        <span class="step-label">3. Biometrics</span>
+      </div>
+    </section>
+
+    <form id="intake-form" novalidate>
+      <div id="form-messages" role="alert" aria-live="polite"></div>
+
+      <!-- Dynamic step content will render here -->
+      <div id="step-root"></div>
+
+      <div class="nav-row">
+        <button type="button" id="btn-back" class="btn btn-secondary" aria-label="Go to previous step">Back</button>
+        <div class="spacer"></div>
+        <button type="button" id="btn-save" class="btn btn-light" aria-label="Save progress">Save</button>
+        <button type="button" id="btn-next" class="btn btn-primary" aria-label="Go to next step">Next</button>
+      </div>
+
+      <p class="legal small-text">Your data is stored locally in your browser (LocalStorage) in this demo build. No information is transmitted to any server.</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Report Designed by Graham Player Ph.D., Professional Healthcare Innovation and Information Resource Consultant.</p>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

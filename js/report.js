@@ -101,31 +101,47 @@ const Report = (() => {
 
   // --- PDF export ------------------------------------------------------------
   const exportPDF = async () => {
-    const node = document.querySelector('#report');
-    if (!node) return;
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF({ unit:'pt', format:'a4' });
+  const src = document.querySelector('#report');
+  if (!src) return;
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ unit:'pt', format:'a4' });
 
-    // Render the node in page-height slices
-    const A4H = 1122; // ~ A4 page height in px for 72dpi
-    const total = Math.ceil(node.scrollHeight / A4H);
+  // A4 at ~96dpi in CSS pixels
+  const A4_PX = { w: 794, h: 1123 }; // 595×842 pt ≈ 794×1123 px
+  // Clone the report and render at a fixed width so canvases stay small
+  const clone = src.cloneNode(true);
+  Object.assign(clone.style, {
+    width: A4_PX.w + 'px',
+    position: 'absolute',
+    left: '-10000px',
+    top: '0',
+    background: 'white'
+  });
+  document.body.appendChild(clone);
 
-    for (let i=0;i<total;i++){
-      const canvas = await html2canvas(node, {
-        scrollY: -window.scrollY,
-        width: node.scrollWidth,
-        windowHeight: A4H,
-        height: A4H,
-        y: i*A4H
-      });
-      const pageW = 595.28; // A4 width in pt
-      const imgW = pageW - 40;
-      const imgH = (canvas.height/canvas.width)*imgW;
-      doc.addImage(canvas.toDataURL('image/png'), 'PNG', 20, 20, imgW, imgH);
-      if (i < total-1) doc.addPage();
-    }
-    doc.save('client-report.pdf');
-  };
+  const total = Math.ceil(clone.scrollHeight / A4_PX.h);
+
+  for (let i = 0; i < total; i++) {
+    const canvas = await html2canvas(clone, {
+      scale: 1,                 // ← critical: keeps canvas within limits
+      width: A4_PX.w,
+      height: A4_PX.h,
+      windowWidth: A4_PX.w,
+      windowHeight: A4_PX.h,
+      x: 0,
+      y: i * A4_PX.h,
+      scrollY: -window.scrollY
+    });
+
+    // Fill each PDF page (A4 in points)
+    const pageWpt = 595.28, pageHpt = 841.89;
+    doc.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, pageWpt, pageHpt);
+    if (i < total - 1) doc.addPage();
+  }
+
+  document.body.removeChild(clone);
+  doc.save('client-report.pdf');
+};
 
   // --- Main render -----------------------------------------------------------
   const render = async (state) => {
